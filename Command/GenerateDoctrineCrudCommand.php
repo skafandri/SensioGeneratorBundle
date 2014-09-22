@@ -115,13 +115,13 @@ EOT
         $runner = $dialog->getRunner($output, $errors);
 
         // form
-        if ($withWrite) {            
+        if ($withWrite) {
             $output->write('Generating the Form code: ');
-	    if ($this->generateForm($bundle, $entity, $metadata)) {
-		$output->writeln('<info>OK</info>');
-	    } else {
-		$output->writeln('<warning>Already exists, skipping</warning>');
-	    }
+            if ($this->generateForm($bundle, $entity, $metadata)) {
+                $output->writeln('<info>OK</info>');
+            } else {
+                $output->writeln('<warning>Already exists, skipping</warning>');
+            }
         }
 
         // routing
