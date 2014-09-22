@@ -117,10 +117,10 @@ EOT
         // form
         if ($withWrite) {            
             $output->write('Generating the Form code: ');
-	    if($this->generateForm($bundle, $entity, $metadata)) {
+	    if ($this->generateForm($bundle, $entity, $metadata)) {
 		$output->writeln('<info>OK</info>');
 	    } else {
-		$output->writeln('<warning>Already exists, skipping</warning>')
+		$output->writeln('<warning>Already exists, skipping</warning>');
 	    }
         }
 
@@ -211,6 +211,7 @@ EOT
         } catch (\RuntimeException $e ) {
             return false;
         }
+
 	return true;
     }
 
