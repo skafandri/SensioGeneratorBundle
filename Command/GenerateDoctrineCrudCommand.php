@@ -212,7 +212,7 @@ EOT
             return false;
         }
 
-	return true;
+	 return true;
     }
 
     protected function updateRouting(DialogHelper $dialog, InputInterface $input, OutputInterface $output, BundleInterface $bundle, $format, $entity, $prefix)
